@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "raleway";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "raleway";
+  color: #fff;
+}
+
+p {
+  font-family: "roboto";
+  color: #000;
+}
+
+header,
+footer {
+  background-color: #314f43;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+  margin: 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  color: #d97904;
+}
+
+.hamburger-label {
+  float: left;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.footer-logo {
+  max-width: 100px;
+}
+
+i:hover {
+  color: #d97904;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    position: left;
+  }
+  li {
+    display: inline-block;
+  }
+}
