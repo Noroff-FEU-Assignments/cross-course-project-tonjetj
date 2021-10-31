@@ -5,31 +5,91 @@
     <meta name="viewport" content="width=device-width, initiaø-scale-1.0" />
     <meta name="descriptio" content="Push the comfort zone, be active, and stay dry with rain jackets from Rainydays" />
     <title>Rainydays | Jackets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&family=Raleway:wght@700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d89489d807.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i></label>
       <input type="checkbox" id="hamburger-menu">
-      <a href="index.html"><img src="images/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
-      <i class="fas fa-search"></i>
-      <i class="fas fa-shopping-cart"></i>
-      <nav class="menu">
-        <ul>
-          <li><a href="jackets.html">Jackets</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Log In</a></li>
-        </ul>
-      </nav>
+      <a href="index.html"><img src="interface/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
+      <i class="fas fa-search" id="search-icon"></i>
+      <i class="fas fa-shopping-cart" id="cart-icon"></i>
+  <nav>
+    <ul>
+      <li><a href="jackets.html">Jackets</a></li>
+      <li><a href="about-contact.html">About</a></li>
+      <li><a href="about-contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </nav>
     </header>
     <main id="top">
-        
+      <section class="headline">
+        <div class="item head">
+          <p class="breadcrumbs">Home > Jackets</p>
+          <h1 class="h1-jackets">Jackets</h1>
+          <p>Shop all jackets</p>
+        </div>
+      </section>
+        <section class="products">
+          <div class="item jackets">  
+            <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+            <h2 class="h2">Jacket XYZ</h2>
+            <p class="p">Kr 900</p>
+          </div>
+          <div class="item jackets">  
+            <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+            <h2 class="h2">Jacket XYZ</h2>
+            <p class="p">Kr 900</p>
+          </div>
+          <div class="item jackets">  
+            <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+            <h2 class="h2">Jacket XYZ</h2>
+            <p class="p">Kr 900</p>
+          </div>
+          </section>
+          <section class="products">
+            <div class="item jackets">  
+              <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+              <h2 class="h2">Jacket XYZ</h2>
+              <p class="p">Kr 900</p>
+            </div>
+            <div class="item jackets">  
+              <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+              <h2 class="h2">Jacket XYZ</h2>
+              <p class="p">Kr 900</p>
+            </div>
+            <div class="item jackets">  
+              <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+              <h2 class="h2">Jacket XYZ</h2>
+              <p class="p">Kr 900</p>
+            </div>
+            </section>
+            <section class="products">
+              <div class="item jackets">  
+                <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+                <h2 class="h2">Jacket XYZ</h2>
+                <p class="p">Kr 900</p>
+              </div>
+              <div class="item jackets">  
+                <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+                <h2 class="h2">Jacket XYZ</h2>
+                <p class="p">Kr 900</p>
+              </div>
+              <div class="item jackets">  
+                <a href="products/jacketspecific.html"><img src="images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-photo"/></a>
+                <h2 class="h2">Jacket XYZ</h2>
+                <p class="p">Kr 900</p>
+              </div>
+              </section>
         <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
     </main>
     <footer> 
-        <img src="images/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
+        <img src="interface/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
         <nav>
           <ul>
             <li><a href="about.html">About Rainydays</a></li>
@@ -38,8 +98,8 @@
           </ul>
         </nav>
         <p>Follow us:</p>
-        <p>instagram icon</p>
-        <p>facebook icon</p>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-square"></i>
           Copyright &copy;
     </footer>
   </body>

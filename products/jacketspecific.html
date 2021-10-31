@@ -4,32 +4,92 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initiaø-scale-1.0" />
     <meta name="descriptio" content="Push the comfort zone, be active, and stay dry with rain jackets from Rainydays" />
-    <title>Rainydays | Jackets</title>
+    <title>Rainydays | Jacket XYZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&family=Raleway:wght@700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d89489d807.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i></label>
       <input type="checkbox" id="hamburger-menu">
-      <a href="index.html"><img src="images/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
-      <i class="fas fa-search"></i>
-      <i class="fas fa-shopping-cart"></i>
-      <nav class="menu">
-        <ul>
-          <li><a href="jackets.html">Jackets</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Log In</a></li>
-        </ul>
-      </nav>
+      <a href="index.html"><img src="../interface/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
+      <i class="fas fa-search" id="search-icon"></i>
+      <i class="fas fa-shopping-cart" id="cart-icon"></i>
+  <nav>
+    <ul>
+      <li><a href="../jackets.html">Jackets</a></li>
+      <li><a href="../about-contact.html">About</a></li>
+      <li><a href="../about-contact.html">Contact</a></li>
+      <li><a href="../login.html">Log In</a></li>
+    </ul>
+  </nav>
     </header>
-    <main id="top">
-        
-        <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+    <main>
+      <section>
+        <p class="breadcrumbs">HOME > JACKETS > JACKET XYZ</p>
+        <section>
+          <div class="item product-float">
+            <img src="../images/product-specific-1.jpg" class="product-specific-1">
+          </div>
+        <section class="container">
+          <div class="item header">
+            <h1 class="h1-jacket-specific">JACKET XYZ</h1>
+          </div>
+          <div class="item subheader">
+            <h2 class="h2-jacket-specific">KR 999</h2>
+          </div>
+          <div class="item paragraph">
+            <p class="positioned">Jacket XYZ is the perfect pullover rain jacket for all activities. It's lightweight and protects against wind and rain. Jackt XYZ is simple to use and makes it easy to continue your activities and adventures, even when the weather turns grey.</p>
+          </div>
+          <div class="item info-icon">
+            <i class="fas fa-info-circle" id="info-icon"></i> 
+          </div>
+          <div class="item info-box">
+            <p class="info-section">Jacket XYZ is made of 100% polyester.<br/>Wash on 30 C. Unisex.</p> 
+          </div>
+          <div class="item size-button">
+            <label for="sizes" alt="choose a size">Choose a size</label>
+            <select name="sizes" id="sizes">
+              <option value="extra small" alt="extra small">extra small</option>
+              <option value="small" alt="small">small</option>
+              <option value="medium" alt="medium">medium</option>
+              <option value="large" alt="large">large</option>
+              <option value="extra large" alt="extra large">extra large</option>
+            </select>
+          </div>
+          <div class="item add-button">
+            <p class="cta" alt="add to cart">Add to cart</p>
+          </div>
+        </section>
+        <p>Other products you might like:</p>
+      <section class="featured">
+        <div>
+          <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
+          <h3>Jacket XYZ</h3>
+          <p>Kr 999</p>
+        </div>
+        <div>
+          <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
+          <h3>Jacket XYZ</h3>
+          <p>Kr 999</p>
+        </div>
+        <div>
+          <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
+          <h3>Jacket XYZ</h3>
+          <p>Kr 999</p>
+        </div>
+        <div>
+          <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
+          <h3>Jacket XYZ</h3>
+          <p>Kr 999</p>
+        </div>
+      </section>
     </main>
     <footer> 
-        <img src="images/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
+        <img src="../interface/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
         <nav>
           <ul>
             <li><a href="about.html">About Rainydays</a></li>
@@ -38,8 +98,8 @@
           </ul>
         </nav>
         <p>Follow us:</p>
-        <p>instagram icon</p>
-        <p>facebook icon</p>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i>
           Copyright &copy;
     </footer>
   </body>

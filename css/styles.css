@@ -1,40 +1,47 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "Raleway", "Roboto";
+  src: url();
 }
 
 body {
-  font-family: "raleway";
+  background-color: #fff;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "raleway";
-  color: #fff;
+  font-weight: 900;
+}
+
+header {
+  min-height: 100px;
+  text-align: center;
 }
 
 p {
   font-family: "roboto";
-  color: #000;
 }
 
-header,
-footer {
-  background-color: #314f43;
+.hamburger-label {
+  float: left;
   color: #fff;
+  padding: 10px;
+  font-size: 1em;
+  display: block;
+  font-family: "Roboto";
+  font-weight: normal;
 }
 
-header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  padding: 20px;
-  margin: 0px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hamburger-label:hover {
+  color: #ffbd00;
+}
+
+#menu-icon {
+  font-size: 1.5em;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 nav,
@@ -47,50 +54,347 @@ nav ul {
 }
 
 nav li {
+  text-align: center;
   display: block;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
+  font-family: "Raleway";
+  font-weight: bolder;
   padding: 10px;
-  display: block;
 }
 
 nav a:hover {
-  font-weight: bolder;
-  color: #d97904;
-}
-
-.hamburger-label {
-  float: left;
-  color: #fff;
-  padding: 10px;
-  font-size: 1.5em;
-  display: block;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
+  color: #ffbd00;
 }
 
 .logo {
   max-width: 100px;
 }
 
-.footer-logo {
-  max-width: 100px;
+header,
+footer {
+  background-color: #314f43;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff;
+}
+
+/* Home page */
+.welcome {
+  background-image: url("../images/home-slogan.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-position: relative;
+  min-height: 115vh;
+}
+
+.welcome2 {
+  background-image: url("../images/home-be-active.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-position: relative;
+  min-height: 90vh;
+}
+
+.welcome3 {
+  background-image: url("../images/home-stay-dry.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-position: relative;
+  min-height: 100vh;
+}
+
+.welcome__pushingthe {
+  position: absolute;
+  font-family: "raleway";
+  font-style: normal;
+  font-size: 3em;
+  color: #fff;
+  top: 370px;
+  left: 160px;
+}
+.welcome__comfortzone {
+  position: absolute;
+  font-family: "raleway";
+  font-style: normal;
+  font-size: 3em;
+  color: #fff;
+  top: 450px;
+  left: 290px;
+}
+
+.welcome2__beactive {
+  background-color: #314f43;
+  color: #fff;
+  font-family: "montserrat";
+  font-weight: bolder;
+  font-size: 4em;
+  padding: 8px;
+  position: absolute;
+  top: 1120px;
+  left: 325px;
+}
+
+.welcome2__beactive:hover {
+  background-color: #fff;
+  color: #314f43;
+}
+
+.welcome3__staydry {
+  background-color: #fff;
+  color: #314f43;
+  font-family: "montserrat";
+  font-weight: bolder;
+  font-size: 4em;
+  padding: 9px 12px;
+  text-align: center;
+  position: absolute;
+  top: 2050px;
+  left: 250px;
+}
+
+.welcome3__staydry:hover {
+  background-color: #314f43;
+  color: #fff;
+}
+
+.welcome3__shop {
+  border: #fff;
+  border-style: solid;
+  border-width: 3px;
+  color: #fff;
+  font-family: "montserrat";
+  font-size: 3.5em;
+  font-weight: normal;
+  padding: 10px 140px;
+  position: absolute;
+  top: 2600px;
+  left: 230px;
+}
+
+.welcome3__shop:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
+}
+
+.welcome3 p {
+  color: #fff;
+  font-family: "raleway";
+  font-size: 1.3em;
+  position: absolute;
+  top: 2550px;
+  left: 235px;
+}
+
+i {
+  color: #fff;
+  font-size: 1.5em;
 }
 
 i:hover {
-  color: #d97904;
+  color: #ffbd00;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin: 20px 0px 0px 20px;
+  float: left;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 6;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (min-widht: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Contact page*/
+input,
+select {
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+textarea {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.sub-head-about {
+  font-family: "dancing script";
+}
+
+.cta-submit {
+  background-color: #314f43;
+}
+
+/* Jackets page */
+
+.products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  padding: 10px;
+  margin: 10px 0px 0px 50px;
+}
+
+.product-photo {
+  width: 200px;
+  height: 250px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.h2 {
+  margin: 0px;
+  text-align: center;
+}
+.p {
+  margin: 0px;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
-  .logo {
-    position: left;
+  .products {
+    flex-direction: row;
   }
-  li {
-    display: inline-block;
-  }
+}
+
+/* Product page */
+
+.breadcrumbs {
+  color: #ffbd00;
+  font-family: "raleway";
+  font-size: 0.5em;
+}
+
+.h1-jacket-specific,
+.h1-jackets {
+  color: #314f43;
+  font-family: "raleway";
+  font-weight: 900;
+  font-size: 2em;
+  margin: 0px;
+}
+
+.h2-jacket-specific {
+  color: #314f43;
+  font-family: "roboto";
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0px;
+}
+
+p {
+  color: #314f43;
+  font-family: "montserrat";
+}
+
+#info-icon {
+  color: #ffbd00;
+  margin: 0px;
+  padding-left: 2px;
+}
+
+.info-section {
+  background-color: #e3e3e2;
+  color: #314f43;
+  max-width: 280px;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+.cta {
+  background-color: #314f43;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  max-width: 100px;
+  padding: 10px;
+}
+
+.cta:hover {
+  background-color: #97a6a0;
+}
+
+#sizes {
+  background-color: #fff;
+  color: #97a6a0;
+  border-radius: 50px;
+  border-style: solid;
+  font-family: "raleway";
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#sizes:hover {
+  color: #000;
+}
+
+.product-specific-1 {
+  float: left;
+  width: 400px;
+  height: 500px;
+}
+
+.featured {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+}
+
+.products {
+  width: 200px;
+  height: 250px;
+}
+
+.product-float {
+  flex: 1;
+}
+
+.header {
+  flex: 1;
+}
+.subheader {
+  flex: 1;
 }
