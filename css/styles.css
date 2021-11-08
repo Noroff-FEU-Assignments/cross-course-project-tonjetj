@@ -15,7 +15,9 @@ h2 {
 
 header {
   min-height: 100px;
-  text-align: center;
+  min-width: 1330px;
+  display: flex;
+  align-items: center;
 }
 
 p {
@@ -44,6 +46,10 @@ p {
   display: block;
 }
 
+nav {
+  margin-left: 25px;
+}
+
 nav,
 #hamburger-menu {
   display: none;
@@ -55,7 +61,7 @@ nav ul {
 
 nav li {
   text-align: center;
-  display: block;
+  display: inline;
   font-family: "Raleway";
   font-weight: bolder;
   padding: 10px;
@@ -90,148 +96,31 @@ nav a {
 
 /* Home page */
 .welcome {
-  background-image: url("../images/home-slogan.jpg");
-  background-size: 100%;
+  background-image: url(../images/home-slogan.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: bottom;
-  background-position: relative;
-  min-height: 115vh;
+  min-height: 250vh;
+  min-width: 200vh;
+  position: relative;
 }
 
-.welcome2 {
-  background-image: url("../images/home-be-active.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  background-position: relative;
-  min-height: 90vh;
-}
-
-.welcome3 {
-  background-image: url("../images/home-stay-dry.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  background-position: relative;
-  min-height: 100vh;
-}
-
-.welcome__pushingthe {
-  position: absolute;
-  font-family: "raleway";
-  font-style: normal;
-  font-size: 3em;
+h1 {
   color: #fff;
-  top: 370px;
-  left: 160px;
-}
-.welcome__comfortzone {
-  position: absolute;
-  font-family: "raleway";
-  font-style: normal;
-  font-size: 3em;
-  color: #fff;
-  top: 450px;
-  left: 290px;
 }
 
-.welcome2__beactive {
-  background-color: #314f43;
+h1 span {
+  display: block;
   color: #fff;
-  font-family: "montserrat";
-  font-weight: bolder;
-  font-size: 4em;
-  padding: 8px;
-  position: absolute;
-  top: 1120px;
-  left: 325px;
 }
 
-.welcome2__beactive:hover {
-  background-color: #fff;
+h1,
+h1 span {
+  position: absolute;
+}
+
+.sp__beactive {
   color: #314f43;
-}
-
-.welcome3__staydry {
-  background-color: #fff;
-  color: #314f43;
-  font-family: "montserrat";
-  font-weight: bolder;
-  font-size: 4em;
-  padding: 9px 12px;
-  text-align: center;
-  position: absolute;
-  top: 2050px;
-  left: 250px;
-}
-
-.welcome3__staydry:hover {
-  background-color: #314f43;
-  color: #fff;
-}
-
-.welcome3__shop {
-  border: #fff;
-  border-style: solid;
-  border-width: 3px;
-  color: #fff;
-  font-family: "montserrat";
-  font-size: 3.5em;
-  font-weight: normal;
-  padding: 10px 140px;
-  position: absolute;
-  top: 2600px;
-  left: 230px;
-}
-
-.welcome3__shop:hover {
-  background-color: #fff;
-  color: #000;
-  text-decoration: underline;
-}
-
-.welcome3 p {
-  color: #fff;
-  font-family: "raleway";
-  font-size: 1.3em;
-  position: absolute;
-  top: 2550px;
-  left: 235px;
-}
-
-i {
-  color: #fff;
-  font-size: 1.5em;
-}
-
-i:hover {
-  color: #ffbd00;
-}
-
-.footer-logo {
-  max-width: 100px;
-  margin: 20px 0px 0px 20px;
-  float: left;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-.item {
-  flex: 6;
-  padding: 10px;
-  margin: 10px;
-}
-
-@media (min-widht: 600px) {
-  .container {
-    flex-direction: row;
-  }
 }
 
 /* Contact page*/
@@ -287,35 +176,32 @@ textarea {
   text-align: center;
 }
 
-@media (min-width: 600px) {
-  .products {
-    flex-direction: row;
-  }
+/* Product Specific Page */
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Product page */
+.product-specific > * {
+  flex: 1;
+}
+
+.product-image {
+  width: 500px;
+  height: 600px;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
 .breadcrumbs {
   color: #ffbd00;
   font-family: "raleway";
   font-size: 0.5em;
-}
-
-.h1-jacket-specific,
-.h1-jackets {
-  color: #314f43;
-  font-family: "raleway";
-  font-weight: 900;
-  font-size: 2em;
-  margin: 0px;
-}
-
-.h2-jacket-specific {
-  color: #314f43;
-  font-family: "roboto";
-  font-size: 1.5em;
-  font-weight: normal;
-  margin: 0px;
 }
 
 p {
@@ -368,33 +254,8 @@ p {
   color: #000;
 }
 
-.product-specific-1 {
-  float: left;
-  width: 400px;
-  height: 500px;
-}
-
-.featured {
-  display: flex;
-  flex-direction: row;
-}
-
-.item {
-  flex: 1;
-}
-
-.products {
-  width: 200px;
-  height: 250px;
-}
-
-.product-float {
-  flex: 1;
-}
-
-.header {
-  flex: 1;
-}
-.subheader {
-  flex: 1;
+@media (min-width: 600px) {
+  .products {
+    flex-direction: row;
+  }
 }
