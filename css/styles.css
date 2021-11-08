@@ -14,8 +14,8 @@ h2 {
 }
 
 header {
-  min-height: 100px;
-  min-width: 1330px;
+  min-height: 35vh;
+  min-width: 200vh;
   display: flex;
   align-items: center;
 }
@@ -38,8 +38,10 @@ p {
   color: #ffbd00;
 }
 
-#menu-icon {
-  font-size: 1.5em;
+#menu-icon,
+#search-icon,
+#cart-icon {
+  font-size: 5em;
 }
 
 #hamburger-menu:checked ~ nav {
@@ -72,7 +74,7 @@ nav a:hover {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 250px;
 }
 
 header,
