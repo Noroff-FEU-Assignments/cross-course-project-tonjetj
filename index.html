@@ -13,23 +13,26 @@
   </head>
   <body>
     <header>
-          <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i></label>
+        <div>
+          <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i><span>menu</span></label>
           <input type="checkbox" id="hamburger-menu">
-          <a href="index.html"><img src="interface/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
-          <i class="fas fa-search" id="search-icon"></i>
-          <i class="fas fa-shopping-cart" id="cart-icon"></i>
-      <nav>
-        <ul>
-          <li><a href="jackets.html">Jackets</a></li>
-          <li><a href="about-contact.html">About</a></li>
-          <li><a href="about-contact.html">Contact</a></li>
-          <li><a href="login.html">Log In</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+              <li><a href="jackets.html">Jackets</a></li>
+              <li><a href="about-contact.html">About</a></li>
+              <li><a href="about-contact.html">Contact</a></li>
+              <li><a href="login.html">Log In</a></li>
+            </ul>
+         </nav>
+        </div>
+      <section class="header-icons">
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-shopping-cart" id="cart-icon"></i>
+      </section>
     </header>
     <main id="top">
         <section class="welcome">
-            <h1>Pushing The <span>Comfort Zone</span></h1>
+            <h1 class="slogan">Pushing The <span>Comfort</span><span class="zone"> Zone</span></h1>
         </section>
         <section class="sp">
             <a href="jackets.html" class="sp__beactive">Be active</a>
@@ -42,8 +45,9 @@
         <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
     </main>
     <footer> 
-        <img src="interface/rainydays-logo-slogan.png" alt="rainydays logo and slogan" class="
-        footer-logo"/>
+      <section class="logo-container">
+        <img src="interface/rainydays-logo-slogan.png" alt="rainydays logo and slogan"/>
+      </section>
         <section>
           <nav>
             <ul>

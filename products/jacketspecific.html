@@ -13,75 +13,84 @@
   </head>
   <body>
     <header>
-      <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i></label>
+        <a href="../index.html"><img class="logo" src="../interface/rainydays-logo.png" alt="Rainydays logo"></a>
+      <nav>
+        <ul>
+          <li><a href="../jackets.html">Jackets</a></li>
+          <li><a href="../about-contact.html">About</a></li>
+          <li><a href="../about-contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i><span>menu</span></label>
       <input type="checkbox" id="hamburger-menu">
-      <a href="index.html"><img src="../interface/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
+    <section class="header-icons">
       <i class="fas fa-search" id="search-icon"></i>
       <i class="fas fa-shopping-cart" id="cart-icon"></i>
-  <nav>
-    <ul>
-      <li><a href="../jackets.html">Jackets</a></li>
-      <li><a href="../about-contact.html">About</a></li>
-      <li><a href="../about-contact.html">Contact</a></li>
-      <li><a href="../login.html">Log In</a></li>
-    </ul>
-  </nav>
+    </section>
     </header>
-    <main class="product-specific">
+    <main>
       <section>
         <p class="breadcrumbs">HOME > JACKETS > JACKET XYZ</p>
         <section>
           <section>
-            <img src="../images/product-specific-1.jpg" class="product-image"/>
-            <div class="product-image_thumbnails">
-              <div>
-                <img src="../images/product-specific-1.jpg" alt="Rainjacket XYZ" class="product-image"/>
+            <div class="jktspcfc-container">
+              <div class="grid-item">
+                <img src="../images/product-specific-1.jpg" class="product-image"/>
               </div>
-              <div>
-                <img src="../images/product-specific -2.jpg" alt="Details on rainjacket XYZ" class="product-image"/>
+            <div class="grid-item">
+              <h1>JACKET XYZ</h1> 
+              <h2>KR 999</h2>
+              <p>Jacket XYZ is the perfect pullover rain jacket for all activities. It's lightweight and protects against wind and rain. Jackt XYZ is simple to use and makes it easy to continue your activities and adventures, even when the weather turns grey.</p>
+              <i class="fas fa-info-circle" id="info-icon"></i> 
+              <p class="info-section">Jacket XYZ is made of 100% polyester.<br/>Wash on 30 C. Unisex.</p> 
+              <div class="item size-button">
+                <label for="sizes" alt="choose a size"></label>
+                <select name="sizes" id="sizes">
+                  <option value="extra small" alt="extra small">extra small</option>
+                  <option value="small" alt="small">small</option>
+                  <option value="medium" alt="medium">medium</option>
+                  <option value="large" alt="large">large</option>
+                  <option value="extra large" alt="extra large">extra large</option>
+                </select>
+                <div class="item add-button">
+                  <p class="cta" alt="add to cart">Add to cart</p>
+                </div>
               </div>
             </div>
-          </section class="product-specific__details">
-          <section>
-            <h1>JACKET XYZ</h1>
-            <h2>KR 999</h2>
-            <p>Jacket XYZ is the perfect pullover rain jacket for all activities. It's lightweight and protects against wind and rain. Jackt XYZ is simple to use and makes it easy to continue your activities and adventures, even when the weather turns grey.</p>
-            <i class="fas fa-info-circle" id="info-icon"></i> 
-            <p class="info-section">Jacket XYZ is made of 100% polyester.<br/>Wash on 30 C. Unisex.</p> 
-            <div class="item size-button">
-              <label for="sizes" alt="choose a size">Choose a size</label>
-              <select name="sizes" id="sizes">
-                <option value="extra small" alt="extra small">extra small</option>
-                <option value="small" alt="small">small</option>
-                <option value="medium" alt="medium">medium</option>
-                <option value="large" alt="large">large</option>
-                <option value="extra large" alt="extra large">extra large</option>
-              </select>
             </div>
-          <div class="item add-button">
-            <p class="cta" alt="add to cart">Add to cart</p>
-          </div>
         </section>
-        <section>
-          <p>Other products you might like:</p>
-          <div>
+        <section class="other-products">
+          <h3>Other products you might like:</h3>
+          <div class="products">
             <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
-            <h3>Jacket XYZ</h3>
+            <h4>Jacket XYZ</h4>
             <p>Kr 999</p>
+            <a href="jacketspecific.html" class="view-cta">View</a>
+          </div>
+          <div class="products">
             <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
-            <h3>Jacket XYZ</h3>
+            <h4>Jacket XYZ</h4>
             <p>Kr 999</p>
+            <a href="jacketspecific.html" class="view-cta">View</a>
+          </div>
+          <div class="products">
             <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
-            <h3>Jacket XYZ</h3>
+            <h4>Jacket XYZ</h4>
             <p>Kr 999</p>
+            <a href="jacketspecific.html" class="view-cta">View</a>
+          </div>
+          <div class="products">
             <a href="jacketspecific.html"><img src="../images/product-specific-1.jpg" alt="Jacket XYZ"  class="item products"/></a>
-            <h3>Jacket XYZ</h3>
+            <h4>Jacket XYZ</h4>
             <p>Kr 999</p>
+            <a href="jacketspecific.html" class="view-cta">View</a>
           </div>
         </section>
     </main>
     <footer> 
+      <section class="logo-container">
         <img src="../interface/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
+        </section>
         <nav>
           <ul>
             <li><a href="about.html">About Rainydays</a></li>

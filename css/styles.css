@@ -2,26 +2,44 @@
   font-family: "Raleway", "Roboto";
   src: url();
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #fff;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "raleway";
   font-weight: 900;
 }
 
-header {
-  min-height: 35vh;
-  min-width: 200vh;
-  display: flex;
-  align-items: center;
-}
-
 p {
   font-family: "roboto";
+}
+
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  size-adjust: 100%;
+  align-items: center;
+  min-width: 100%;
+}
+
+header .logo {
+  max-width: 100px;
+  margin-left: 20px;
 }
 
 .hamburger-label {
@@ -34,27 +52,38 @@ p {
   font-weight: normal;
 }
 
-.hamburger-label:hover {
-  color: #ffbd00;
-}
-
-#menu-icon,
-#search-icon,
-#cart-icon {
-  font-size: 5em;
+input .hamburger-menu {
+  display: none;
 }
 
 #hamburger-menu:checked ~ nav {
   display: block;
 }
 
-nav {
-  margin-left: 25px;
+.header-icons {
+  margin-right: 20px;
 }
 
-nav,
-#hamburger-menu {
-  display: none;
+#search-icon {
+  padding: 0px 5px;
+}
+
+.header-icons,
+#menu-icon {
+  font-size: 1.5em;
+}
+
+.hamburger-label:hover,
+#search-icon:hover,
+#cart-icon:hover,
+nav li:hover {
+  color: #ffbd00;
+}
+
+nav {
+  margin-left: 20px;
+  left: 0;
+  float: left;
 }
 
 nav ul {
@@ -62,6 +91,7 @@ nav ul {
 }
 
 nav li {
+  float: left;
   text-align: center;
   display: inline;
   font-family: "Raleway";
@@ -69,12 +99,21 @@ nav li {
   padding: 10px;
 }
 
-nav a:hover {
-  color: #ffbd00;
+main {
+  padding-top: 60px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.logo {
-  max-width: 250px;
+main i {
+  color: #000;
+  font-size: 2rem;
+  margin: 50px;
+  overflow: auto;
+}
+
+main i:hover {
+  text-decoration: underline;
 }
 
 header,
@@ -84,7 +123,10 @@ footer {
 }
 
 footer {
+  right: 0;
+  left: 0;
   text-align: center;
+  min-width: 100%;
 }
 
 /* Links */
@@ -97,28 +139,56 @@ nav a {
 }
 
 /* Home page */
-.welcome {
-  background-image: url(../images/home-slogan.jpg);
+
+.welcome,
+.sp,
+.sp2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
-  min-height: 250vh;
   min-width: 200vh;
+  min-height: 250vh;
   position: relative;
 }
 
-h1 {
+.welcome {
+  background-image: url(../images/home-slogan.jpg);
+}
+
+label span {
+  display: block;
+  font-family: "roboto";
+}
+
+.sp {
+  background-image: url(../images/home-be-active.jpg);
+}
+
+.sp2 {
+  background-image: url(../images/home-stay-dry.jpg);
+  min-height: 300vh;
+}
+
+.welcome .slogan {
   color: #fff;
+  font-size: 8rem;
+  position: absolute;
+  top: 550px;
+  left: 220px;
 }
 
 h1 span {
   display: block;
   color: #fff;
+  position: absolute;
+  left: 300px;
 }
 
-h1,
-h1 span {
+h1 .zone {
+  display: block;
   position: absolute;
+  top: 300px;
+  left: 600px;
 }
 
 .sp__beactive {
@@ -126,6 +196,50 @@ h1 span {
 }
 
 /* Contact page*/
+
+.about-intro {
+  text-align: center;
+}
+
+.about-intro h1 {
+  text-align: center;
+  font-family: "raleway";
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: #314f43;
+  margin: 10px 0px 0px 0px;
+}
+
+.about-intro .sub-head-about {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+.about-intro .breadcrumbs {
+  margin: 30px 0px 50px;
+}
+
+.about-item h2 {
+  font-family: ;
+}
+
+.about-item p {
+  font-family: "roboto";
+  font-size: 12px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.about-item img {
+  width: 100%;
+}
+
 input,
 select {
   border: 1px solid #000;
@@ -147,42 +261,103 @@ textarea {
 
 /* Jackets page */
 
-.products {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
-
-.item {
-  padding: 10px;
-  margin: 10px 0px 0px 50px;
-}
-
-.product-photo {
-  width: 200px;
-  height: 250px;
+.featured-product img {
+  width: 100%;
 }
 
 .headline {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.headline h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: "montserrat";
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.headline h1,
+h2,
+h3,
+.breadcrumbs,
+.featured p,
+.featured-product {
+  color: #314f43;
+  margin: auto;
   text-align: center;
 }
 
-.h2 {
-  margin: 0px;
-  text-align: center;
+.featured h3 {
+  font-family: "raleway";
+  text-transform: uppercase;
+  font-weight: 900;
 }
-.p {
-  margin: 0px;
+
+.featured p {
+  font-family: "montserrat";
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 100px;
+}
+
+.view-cta {
+  border: 1px solid #314f43;
+  border-color: #314f43;
+  color: #000;
   text-align: center;
+  padding: 5px 25px;
+  font-family: "montserrat";
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  grid-column: 1;
+}
+
+.view-cta:hover {
+  background-color: #97a6a0;
+  color: #fff;
+  border: none;
 }
 
 /* Product Specific Page */
-.product-specific {
-  display: flex;
-  max-width: 1000px;
-  margin: auto;
+.jktspcfc-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.grid-item h1 {
+  text-align: center;
+  font-family: "raleway";
+  font-size: 40px;
+  color: #314f43;
+  margin: 10px 0px 0px 0px;
+}
+
+.grid-item h2 {
+  font-size: 20px;
+}
+
+.grid-item p {
+  margin-top: 50px;
+  text-align: justify;
+  font-size: 15px;
 }
 
 .product-specific > * {
@@ -201,35 +376,41 @@ textarea {
 }
 
 .breadcrumbs {
-  color: #ffbd00;
+  color: #000;
   font-family: "raleway";
-  font-size: 0.5em;
+  font-size: 0.6em;
 }
 
-p {
+p,
+.products p {
   color: #314f43;
   font-family: "montserrat";
 }
 
 #info-icon {
   color: #ffbd00;
-  margin: 0px;
+  font-size: 15px;
+  margin: 30px 0px 0px 0px;
   padding-left: 2px;
+}
+
+#info-icon:hover {
+  text-decoration: none;
 }
 
 .info-section {
   background-color: #e3e3e2;
   color: #314f43;
   max-width: 280px;
-  text-align: center;
+  text-align: justify;
   padding: 5px;
-  margin: 0px;
 }
 
 .cta {
   background-color: #314f43;
   color: #fff;
   border-radius: 50px;
+  display: grid;
   text-align: center;
   max-width: 100px;
   padding: 10px;
@@ -256,8 +437,88 @@ p {
   color: #000;
 }
 
-@media (min-width: 600px) {
-  .products {
-    flex-direction: row;
+.other-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: auto;
+  margin: 60px 0px;
+  gap: 40px;
+}
+
+.other-products h3 {
+  grid-column: -1/1;
+  font-weight: normal;
+  font-family: "montserrat";
+}
+
+.products img {
+  width: 100%;
+}
+.products h4,
+.products p {
+  margin: auto;
+  text-align: center;
+}
+
+.products h4 {
+  font-family: "raleway";
+  color: #314f43;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.products p {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.products .view-cta {
+  display: grid;
+  font-size: 9px;
+  margin: 5px 0px;
+  text-align: center;
+  min-width: 10px;
+}
+
+/* Media */
+
+@media (max-width: 600px) {
+  .featured,
+  .jktspcfc-container,
+  .other-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .breadcrumbs {
+    margin-top: 50px;
+  }
+
+  .header-icons,
+  #menu-icon {
+    font-size: 1.5em;
+    margin: 0px 21.5px;
+  }
+
+  #search-icon {
+    padding: 5px;
+    margin: 0px;
+  }
+
+  #cart-icon {
+    padding: 5px;
+    margin-left: 2px;
+  }
+
+  label span {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+
+  .logo-container img {
+    max-width: 100px;
+    margin: none;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
     <meta name="descriptio" content="Push the comfort zone, be active, and stay dry with rain jackets from Rainydays" />
-    <title>Rainydays | About</title>
+    <title>Rainydays | About & Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&family=Raleway:wght@700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -13,32 +13,43 @@
   </head>
   <body>
     <header style="display: flex;">
-      <label class="hamburger-labeL" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i></label>
+      <a href="../index.html"><img class="logo" src="../interface/rainydays-logo.png" alt="Rainydays logo"></a>
+      <nav>
+        <ul class="navbar__links">
+          <li><a href="jackets.html">Jackets</a></li>
+          <li><a href="about-contact.html">About</a></li>
+          <li><a href="about-contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" id="menu-icon"></i><span>menu</span></label>
       <input type="checkbox" id="hamburger-menu">
-      <a href="index.html"><img src="interface/rainydays-logo.png" class="logo" alt="rainydays logo"></a>
+    <section class="header-icons">
       <i class="fas fa-search" id="search-icon"></i>
       <i class="fas fa-shopping-cart" id="cart-icon"></i>
-  <nav>
-    <ul>
-      <li><a href="jackets.html">Jackets</a></li>
-      <li><a href="about-contact.html">About</a></li>
-      <li><a href="about-contact.html">Contact</a></li>
-      <li><a href="login.html">Log In</a></li>
-    </ul>
-  </nav>
+    </section>
     </header>
     <main id="top">
-        <p>Home > About & Contact</p>
+      <section class="about-intro">
+        <p class="breadcrumbs">Home > About & Contact</p>
         <h1>About Us</h1>
         <p class="sub-head-about">"pushing the comfort zone"</p>
-        <h2>Who are we?</h2>
-        <p>Rainydays is a company who was founded<br/> in 2021. Our main goal is to sell rain jackets<br/> that are suitable for different types of weather,<br/> and no matter what activity.</p>
-        <p>We want you to push the comfort zone<br/> with our versatile range of rain jackets,<br/> be adventurous, go on limitless hikes, and<br/> whenever you want to stay active.</p>
-        <img src="images/about-us-page.jpg">
-        <h1>Contact Us</h1>
+      </section>
+      <section>
+        <div class="about-container">
+          <div class="about-item">
+            <h2>Who are we?</h2>
+            <p>Rainydays is a company who was founded<br/> in 2021. Our main goal is to sell rain jackets<br/> that are suitable for different types of weather,<br/> and no matter what activity.</p>
+            <p>We want you to push the comfort zone<br/> with our versatile range of rain jackets,<br/> be adventurous, go on limitless hikes, and<br/> whenever you want to stay active.</p>
+            <div class="about-item">
+              <img src="images/about-us-page.jpg" class="environment-img">
+            </div>
+          </div>
+        </div>
+      </section>
+        <h3>Contact Us</h3>
         <p>123, Fairytale RD<br/>Imagenary, Country<br/>1234 Nowhere</p>
         <p>+47 123 45 678<br/>Rainydays@gmail.com</p>
-        <h2>Get in touch</h2>
+        <h4>Get in touch</h4>
         <form>
           <label for="name">Your name</label>
           <input type="text" id="name">
@@ -55,7 +66,9 @@
         <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
     </main>
     <footer> 
-        <img src="interface/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
+      <section class="logo-container">
+        <img src="../interface/rainydays-logo-slogan.png" class="footer-logo" alt="rainydays logo and slogan"/>
+        </section>
         <nav>
           <ul>
             <li><a href="about.html">About Rainydays</a></li>
@@ -64,8 +77,8 @@
           </ul>
         </nav>
         <p>Follow us:</p>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i>
           Copyright &copy;
     </footer>
   </body>
