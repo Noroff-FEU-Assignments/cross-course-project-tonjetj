@@ -1,0 +1,62 @@
+header {
+  background-color: #314f43;
+  color: white;
+  font-size: 0;
+  margin: 0;
+}
+nav {
+  display: inline;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+ul {
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.nav-logo {
+  margin-left: 20px;
+  width: 100px;
+}
+
+li {
+  font-size: 16px;
+  display: inline;
+}
+
+ul li a {
+  font-family: "Raleway";
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 16px;
+  text-align: center;
+}
+
+.links:hover {
+  background-color: #fff;
+  color: #243a31;
+  transition: 0.4s;
+  border-radius: 10px;
+  box-shadow: 20px 20px 100px 20px #0f1814;
+}
+
+nav i {
+  font-size: 16px;
+  color: white;
+  padding: 13px 10px;
+}
+
+nav i:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #243a31;
+  transition: 0.2s;
+  border-radius: 10px;
+}

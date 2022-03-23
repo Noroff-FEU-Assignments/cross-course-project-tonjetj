@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
     <meta
-      name="descriptio"
+      name="description"
       content="Push the comfort zone, be active, and stay dry with rain jackets from Rainydays"
     />
     <title>Rainydays | Home</title>
@@ -36,65 +36,45 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
   </head>
+
   <body>
     <header>
-      <div>
-        <label class="hamburger-label" for="hamburger-menu"
-          ><i class="fas fa-bars" id="menu-icon"></i><span>menu</span></label
-        >
-        <input type="checkbox" id="hamburger-menu" />
-        <nav>
-          <ul>
-            <li><a href="jackets.html">Jackets</a></li>
-            <li><a href="about-contact.html">About</a></li>
-            <li><a href="about-contact.html">Contact</a></li>
-            <li><a href="login.html">Log In</a></li>
-          </ul>
-        </nav>
-      </div>
-      <section class="header-icons">
-        <i class="fas fa-search" id="search-icon"></i>
-        <i class="fas fa-shopping-cart" id="cart-icon"></i>
-      </section>
+      <nav>
+        <div>
+          <a href="index.html"
+            ><img
+              src="interface/rainydays-logo.png"
+              class="nav-logo"
+              alt="rainydays logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="jackets.html" class="links">Jackets</a></li>
+          <li><a href="about-contact.html" class="links">About</a></li>
+          <li><a href="about-contact.html" class="links">Contact</a></li>
+        </ul>
+        <div>
+          <label class="hamburger-label" for="hamburger-menu"
+            ><i class="fas fa-bars" id="hamburger"></i
+          ></label>
+          <input type="checkbox" id="hamburger-menu" />
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </nav>
     </header>
+
     <main id="top">
-      <section class="welcome">
-        <h1 class="slogan">
-          Pushing The <span>Comfort</span><span class="zone"> Zone</span>
-        </h1>
-      </section>
-      <section class="sp">
-        <a href="jackets.html" class="sp__beactive">Be active</a>
-      </section>
-      <section class="sp2">
-        <a href="jackets.html" class="sp2__staydry">Stay dry.</a>
-        <p>Buy our jackets</p>
-        <a href="jackets.html" class="sp2__shop">SHOP</a>
-      </section>
-      <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+      <section class="welcome1"></section>
     </main>
+
     <footer>
-      <section class="logo-container">
-        <img
-          src="interface/rainydays-logo-slogan.png"
-          alt="rainydays logo and slogan"
-        />
-      </section>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="about.html">About Rainydays</a></li>
-            <hr />
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section class="follow-us">
-        <p>Follow us:</p>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-square"></i>
-      </section>
+      <p>Follow us:</p>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-square"></i>
       Copyright &copy;
     </footer>
+
+    <scrip src="js/script.js"></scrip>
   </body>
 </html>

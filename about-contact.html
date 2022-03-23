@@ -37,28 +37,30 @@
     </script>
   </head>
   <body>
-    <header style="display: flex">
-      <a href="../index.html"
-        ><img
-          class="logo"
-          src="../interface/rainydays-logo.png"
-          alt="Rainydays logo"
-      /></a>
+    <header>
       <nav>
-        <ul class="navbar__links">
-          <li><a href="jackets.html">Jackets</a></li>
-          <li><a href="about-contact.html">About</a></li>
-          <li><a href="about-contact.html">Contact</a></li>
+        <div>
+          <a href="index.html"
+            ><img
+              src="interface/rainydays-logo.png"
+              class="nav-logo"
+              alt="rainydays logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="jackets.html" class="links">Jackets</a></li>
+          <li><a href="about-contact.html" class="links">About</a></li>
+          <li><a href="about-contact.html" class="links">Contact</a></li>
         </ul>
+        <div>
+          <label class="hamburger-label" for="hamburger-menu"
+            ><i class="fas fa-bars" id="hamburger"></i
+          ></label>
+          <input type="checkbox" id="hamburger-menu" />
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
       </nav>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars" id="menu-icon"></i><span>menu</span></label
-      >
-      <input type="checkbox" id="hamburger-menu" />
-      <section class="header-icons">
-        <i class="fas fa-search" id="search-icon"></i>
-        <i class="fas fa-shopping-cart" id="cart-icon"></i>
-      </section>
     </header>
     <main id="top">
       <section class="about-intro">

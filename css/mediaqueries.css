@@ -1,0 +1,33 @@
+/* 799px and smaller */
+@media (max-width: 799px) {
+  ul li a,
+  #hamburger-menu {
+    display: none;
+  }
+
+  nav i {
+    font-size: 20px;
+  }
+
+  .nav-logo {
+    padding: 20px 0;
+  }
+}
+
+/* 800px and larger */
+@media (min-width: 800px) {
+  .hamburger-label,
+  #hamburger-menu {
+    display: none;
+  }
+}
+
+/* 601px and larger */
+@media (min-width: 601px) {
+}
+
+@media (max-width: 600px) {
+  ul li a {
+    display: none;
+  }
+}
