@@ -1,4 +1,8 @@
-h1 {
-  font-size: 25px;
-  color: black;
+.hero-img {
+  background-image: url(../images/home-slogan.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
 }

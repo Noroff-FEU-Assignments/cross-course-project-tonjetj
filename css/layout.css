@@ -19,7 +19,7 @@ nav {
   margin: 0;
 }
 
-main {
-  background-color: lightblue;
-  height: 600px;
+header,
+footer {
+  background-color: #314f43;
 }
