@@ -4,5 +4,21 @@
   background-position: center;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.active-img {
+  background-image: url(../images/home-be-active.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+}
+
+.dry-img {
+  background-image: url(../images/home-stay-dry.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 800px;
 }

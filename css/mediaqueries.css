@@ -6,9 +6,19 @@
 
 @media (min-width: 1000px) {
   .hero-img {
-    height: 750px;
+    height: 1000px;
     background-size: cover;
     background-position: center;
+  }
+
+  .active-img {
+    height: 1000px;
+    background-position: left;
+  }
+
+  .dry-img {
+    background-position: top;
+    height: 1000px;
   }
 }
 @media (max-width: 1000px) {
@@ -21,24 +31,23 @@
 /* 800px and larger */
 @media (min-width: 800px) {
   .hamburger-label,
-  #hamburger-menu {
+  #hamburger-menu,
+  #hamburger {
     display: none;
   }
 }
 
 /* 799px and smaller */
 @media (max-width: 799px) {
-  li a {
+  ul li {
     display: none;
   }
-
   #hamburger-menu {
     display: none;
   }
 
   #hamburger-menu:checked ~ li a {
-    display: block;
-    justify-content: normal;
+    display: block !important;
   }
 
   nav i {
@@ -50,9 +59,9 @@
   }
 }
 
-/* 601px and larger */
-@media (min-width: 601px) {
-}
-
-@media (max-width: 600px) {
+@media (max-width: 400px) {
+  .dry-img {
+    background-position: bottom;
+    height: 700px;
+  }
 }
