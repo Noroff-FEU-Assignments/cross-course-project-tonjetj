@@ -37,7 +37,8 @@
   background-color: #f2f2f2;
   border-radius: 10px;
   margin-top: 40px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .card-image {
@@ -140,6 +141,10 @@
 }
 
 @media (max-width: 600px) {
+  .jacket-main {
+    margin-top: 55px;
+  }
+
   .headline h1,
   .breadcrumbs {
     text-align: center;
