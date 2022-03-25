@@ -1,5 +1,5 @@
 .jacket-main {
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .headline {
@@ -44,12 +44,12 @@
 .card-image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  min-height: 200px;
+  min-height: auto;
   max-width: 100%;
 }
 
 .card-image:hover {
-  opacity: 0.3;
+  opacity: 0.5;
   transition: 0.5s ease;
 }
 
@@ -142,10 +142,6 @@
 }
 
 @media (max-width: 600px) {
-  .jacket-main {
-    margin-top: 55px;
-  }
-
   .headline h1,
   .breadcrumbs {
     text-align: center;
