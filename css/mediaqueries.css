@@ -28,37 +28,6 @@
   }
 }
 
-/* 800px and larger */
-@media (min-width: 800px) {
-  .hamburger-label,
-  #hamburger-menu,
-  #hamburger {
-    display: none;
-  }
-}
-
-/* 799px and smaller */
-@media (max-width: 799px) {
-  ul li {
-    display: none;
-  }
-  #hamburger-menu {
-    display: none;
-  }
-
-  #hamburger-menu:checked ~ li a {
-    display: block !important;
-  }
-
-  nav i {
-    font-size: 18px;
-  }
-
-  .nav-logo {
-    max-width: 90px;
-  }
-}
-
 @media (max-width: 400px) {
   .dry-img {
     background-position: bottom;

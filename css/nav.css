@@ -1,63 +1,82 @@
-header {
-  background-color: #314f43;
-  color: white;
-  font-size: 0;
-  margin: 0;
-}
 nav {
-  background-color: #314f43;
-  align-items: center;
   width: 100%;
-  overflow: hidden;
   justify-content: space-between;
-  position: fixed;
-}
-
-ul {
   align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 20px;
+  padding: 10px 15px;
 }
 
 .nav-logo {
-  margin-left: 20px;
   width: 100px;
 }
 
-li {
-  font-size: 16px;
-  display: inline;
+ul {
+  list-style-type: none;
 }
 
-ul li a {
-  font-family: "Raleway";
-  font-size: 16px;
-  color: #fff;
+li a {
   text-decoration: none;
+  font-size: 16px;
+  font-family: "Raleway";
   padding: 13px 16px;
   text-align: center;
+  color: #fff;
 }
 
-nav i {
-  font-size: 16px;
-  color: white;
-  padding: 13px 10px;
+.menu-icons i {
+  padding: 8px;
 }
 
-/* Hover states */
-.links:hover {
-  background-color: #fff;
-  color: #243a31;
-  transition: 0.4s;
-  border-radius: 10px;
-  box-shadow: 20px 20px 100px 20px #0f1814;
-}
+/* Hover effects */
 
-nav i:hover {
+li a:hover,
+.menu-icons i:hover {
   background-color: white;
-  cursor: pointer;
   color: #243a31;
   transition: 0.2s;
   border-radius: 10px;
+}
+
+li a:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.menu-icons i:hover {
+  cursor: pointer;
+}
+
+/* From 800px and higher */
+@media (min-width: 800px) {
+  li {
+    display: inline;
+  }
+
+  #menu-checkbox,
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+/* From 799px and lower*/
+@media (max-width: 799px) {
+  nav {
+    display: grid;
+    align-items: center;
+  }
+
+  ul {
+    display: none;
+  }
+
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ ul {
+    display: block;
+  }
+
+  li a {
+    align-items: center;
+  }
 }

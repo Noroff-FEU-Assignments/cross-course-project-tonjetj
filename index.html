@@ -40,25 +40,25 @@
   <body>
     <header>
       <nav>
-        <div>
-          <a href="index.html"
-            ><img
-              src="interface/rainydays-logo.png"
-              class="nav-logo"
-              alt="rainydays logo"
-          /></a>
-        </div>
+        <a href="index.html">
+          <img
+            src="interface/rainydays-logo.png"
+            class="nav-logo"
+            alt="rainydays logo"
+          />
+        </a>
+
+        <input type="checkbox" id="menu-checkbox" />
+        </label>
         <ul>
           <li><a href="jackets.html" class="links">Jackets</a></li>
           <li><a href="about-contact.html" class="links">About</a></li>
           <li><a href="#contact" class="links">Contact</a></li>
         </ul>
-        <div>
-          <label for="hamburger-menu"
-            ><i class="fas fa-bars" id="hamburger"></i
-          ></label>
-          <input type="checkbox" id="hamburger-menu" />
-          <i class="fas fa-search"></i>
+        <div class="menu-icons">
+          <label for="menu-checkbox" class="hamburger-icon">
+            <i class="fas fa-bars"></i></label>
+          <i class="fas fa-search"></i> 
           <i class="fas fa-shopping-cart"></i>
         </div>
       </nav>
