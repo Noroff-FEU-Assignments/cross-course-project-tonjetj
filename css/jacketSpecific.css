@@ -5,5 +5,7 @@ main .container {
 }
 
 main div .content {
-  background-color: grey;
+  background-color: lightblue;
+  grid-column: 3/11;
+  grid-row: 1/4;
 }
