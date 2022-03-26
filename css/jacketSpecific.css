@@ -1,11 +1,67 @@
-main .container {
+.container,
+.content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4);
 }
 
-main div .content {
-  background-color: lightblue;
+.container {
+  margin-top: 20px;
+}
+
+.content {
   grid-column: 3/11;
-  grid-row: 1/4;
+  grid-row: 1/5;
+  /*border: 1px solid black;*/
+}
+
+.big-product-photo {
+  grid-column: 2/5;
+  grid-row: 1;
+  overflow: hidden;
+}
+
+.big-product-photo img {
+  border-radius: 10px;
+  min-height: autp;
+  max-width: 100%;
+}
+
+.copy {
+  grid-column: 6/12;
+}
+
+.copy .breadcrumbs {
+  text-align: left;
+}
+
+.headings {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.headings h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.headings h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.jacket-copy {
+  min-width: auto;
+}
+
+.jacket-copy .text {
+  background-color: white;
+  margin-right: 90px;
+  font-size: 17px;
+}
+
+.info-section .info {
+  font-size: 13px;
+  font-weight: lighter;
 }
