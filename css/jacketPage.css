@@ -88,9 +88,7 @@
 .product-button:active {
   background-color: #67a58c;
   color: #fff;
-  transition: 0.1s;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  transition: 0.2s;
 }
 
 .card h3,

@@ -1,3 +1,2 @@
-import { homepage } from "./homepage";
-import { form } from "./contact";
-import { errormessage } from "./errormessage";
+import { form } from "./form.js";
+import { addToCart } from "./cart.js";

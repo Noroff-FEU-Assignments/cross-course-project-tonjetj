@@ -47,7 +47,7 @@
           />
         </a>
         <input type="checkbox" id="menu-checkbox" />
-        </label>
+
         <ul class="dropdown">
           <li><a href="../jackets.html" class="links">Jackets</a></li>
           <li><a href="../about-contact.html" class="links">About</a></li>
@@ -55,9 +55,10 @@
         </ul>
         <div class="menu-icons">
           <label for="menu-checkbox" class="hamburger-icon">
-            <i class="fas fa-bars"></i></label>
-          <i class="fas fa-search"></i> 
-          <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-bars"></i
+          ></label>
+          <i class="fas fa-search"></i>
+          <i id="cart" class="fas fa-shopping-cart"> <div id="added"></div></i>
         </div>
       </nav>
     </header>
@@ -65,46 +66,52 @@
       <div class="content">
         <section class="big-product-photo">
           <img src="../images/product-specific-1.jpg" />
-
         </section>
-        
+
         <section class="copy">
-          <p class="breadcrumbs"> Home / Jackets / Jacket XYZ</p>
+          <p class="breadcrumbs">Home / Jackets / Jacket XYZ</p>
           <div class="headings">
             <h1>Jacket XYZ</h1>
             <h2>kr 999</h2>
           </div>
-          
+
+          <div class="loader"></div>
           <div class="jacket-copy">
-            <p class="text">Jacket XYZ is the perfect pullover rain jacket for all activities. 		   It's lightweight and protects against wind and rain. Jacket XYZ is 			   simple to use and makes it easy to continue your activities and 			   adventures, even when the weather turns grey.
+            <p class="text">
+              Jacket XYZ is the perfect pullover rain jacket for all activities.
+              It's lightweight and protects against wind and rain. Jacket XYZ is
+              simple to use and makes it easy to continue your activities and
+              adventures, even when the weather turns grey.
             </p>
-            
+
             <div class="info-section">
-              <p class="info">Jacket XYZ is made of 100% polyester. Wash on 30 C. 				Unisex.</p>
+              <p class="info">
+                Jacket XYZ is made of 100% polyester. Wash on 30 C. Unisex.
+              </p>
             </div>
           </div>
-            
+
           <div class="item size-button">
-                  <label for="sizes" alt="choose a size" class="size-button"></label>
-                        <select name="sizes" id="sizes">
-                          <option value="extra small" alt="extra small">extra small</option>
-                          <option value="small" alt="small">small</option>
-                          <option value="medium" alt="medium">medium</option>
-                          <option value="large" alt="large">large</option>
-                          <option value="extra large" alt="extra large">extra large</option>
-                        </select>
-                        <div class="item add-button">
-                          <p class="add-btn" alt="add to cart">Add to cart</p>
-                        </div>
+            <label for="sizes" alt="choose a size" class="size-button"></label>
+            <select name="sizes" id="sizes">
+              <option value="extra small" alt="extra small">extra small</option>
+              <option value="small" alt="small">small</option>
+              <option value="medium" alt="medium">medium</option>
+              <option value="large" alt="large">large</option>
+              <option value="extra large" alt="extra large">extra large</option>
+            </select>
           </div>
+
+          <button class="add-to-cart" onclick="addToCart()">Add to cart</button>
         </section>
       </div>
-      </main>
-    <footer> 
-        <p>Follow us:</p>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-facebook-square"></i>
-          Copyright &copy;
+    </main>
+    <footer>
+      <p>Follow us:</p>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-square"></i>
+      Copyright &copy;
     </footer>
+    <script src="../js/cart.js"></script>
   </body>
 </html>
