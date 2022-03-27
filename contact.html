@@ -51,8 +51,8 @@
           </label>
           <ul class="dropdown">
             <li><a href="jackets.html" class="links">Jackets</a></li>
-            <li><a href="about-contact.html" class="links">About</a></li>
-            <li><a href="#contact" class="links">Contact</a></li>
+            <li><a href="about.html" class="links">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
           <div class="menu-icons">
             <label for="menu-checkbox" class="hamburger-icon">
@@ -64,20 +64,41 @@
         </nav>
       </header>
 
-    <main class="container">
-      <div class="successMessage"></div>
-      <form action="my.api/newsletter/signup" method="post" onsubmit="onSignup">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="Email" required pattern="[^@]*@example.com" title="[first.last]@example.com">
-        <div class="message">Only users with a valid @example.com email address can signup for the newsletter.</div>
-        <button class="submit">Submit</button>
-      </form>
+    <main>
+
+      <section class="about-intro">
+        <p class="breadcrumbs">Home / Contact</p>
+        </section>
+
+        <div class="container">
+
+          <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>123, Fairytale RD<br />Imagenary, Country<br />1234 Nowhere</p>
+            <p>+47 123 45 678<br />Rainydays@gmail.com</p>
+          </div>
+
+          <div class="form-container">
+            <h2>Sign up for newsletter</h2>
+            <form action="my.api/newsletter/signup" method="post" onsubmit="onSignup">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email" name="email" placeholder="Email" required pattern="[^@]*@example.com" title="[first.last]@example.com">
+              <div class="message">You need a valid @example.com email address to signup for the newsletter.</div>
+              <button class="submit">Submit</button>
+            </form>
+          </div>
+
+
+        </div>
+
     </main>
     <footer>
-        <p>Follow us:</p>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-square"></i>
-        Copyright &copy;
+      <div class="footer">
+        <img class="footer-logo" src="./interface/rainydays-logo-slogan.png" alt="rainydays logo with slogan: Pushing the comfort zone"/>
+
+        <div class="copyright">Copyright &copy;</div>
+      </div>
+
       </footer>
   
       <script src="js/script.js"></script>

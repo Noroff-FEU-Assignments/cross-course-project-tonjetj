@@ -5,7 +5,8 @@ nav {
   padding: 10px 15px;
 }
 
-.nav-logo {
+.nav-logo,
+.footer-logo {
   width: 100px;
 }
 

@@ -2,22 +2,29 @@
   box-sizing: border-box;
 }
 
-.successMessage {
-  grid-column: 3/8;
-}
-
 form {
   padding: 2em;
-  background: white;
-  border: solid 1px black;
+  background: #f2f2f2;
   border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.form-container {
+  grid-column: 7/12;
+}
+
+.contact-container {
+  grid-column: 4/6;
 }
 
 input {
   width: 100%;
-  margin-top: 2px;
+  margin-top: 4px;
   padding: 10px;
   font-size: 18px;
+  border-radius: 10px;
+  border: none;
 }
 
 .submit {
@@ -28,7 +35,7 @@ input {
   color: white;
   margin-top: 10px;
   cursor: pointer;
-  border-radius: 0.2rem;
+  border-radius: 10px;
 }
 
 label {
@@ -36,36 +43,10 @@ label {
   margin-top: 1rem;
 }
 
-.form-error {
-  display: none;
-  color: red;
-  font-size: 18px;
-  margin-top: 2px;
-}
-
-.form-success {
-  display: none;
-  font-size: 2rem;
-  margin-top: 2px;
-}
-
 .message {
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid orange;
   color: rgb(0, 0, 0);
+  background-color: rgba(255, 166, 0, 0.418);
   margin-top: 1rem;
   padding: 1rem;
-}
-
-.message.error {
-  border-color: red;
-  color: red;
-}
-
-.message.success {
-  border-color: green;
-  color: green;
-}
-
-.submity:disabled {
-  background: lightgray;
 }
