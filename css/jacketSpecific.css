@@ -85,10 +85,29 @@
 }
 
 .added {
-  height: 10px;
-  width: 10px;
-  transform: translate(130%, -180%);
-  background-color: #ffbd00;
+  color: #ffbd00;
   border-radius: 400px;
   transition: ease 0.4s;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    transform: translate(-1px, 0px) rotate(1deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  60% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
 }
