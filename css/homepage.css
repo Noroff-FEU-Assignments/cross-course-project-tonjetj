@@ -22,3 +22,40 @@
   background-size: cover;
   height: 800px;
 }
+
+@media (min-width: 1600px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero-img {
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .active-img {
+    height: 1000px;
+    background-position: left;
+  }
+
+  .dry-img {
+    background-position: top;
+    height: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-img {
+    height: 750px;
+    background-position: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .dry-img {
+    background-position: bottom;
+    height: 700px;
+  }
+}

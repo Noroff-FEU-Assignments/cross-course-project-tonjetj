@@ -61,6 +61,11 @@ li a:hover {
 
 /* From 799px and lower*/
 @media (max-width: 799px) {
+  .menu-icons label {
+    display: inline;
+    margin-top: 0;
+  }
+
   nav {
     overflow: hidden;
   }

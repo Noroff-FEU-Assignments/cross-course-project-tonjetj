@@ -40,14 +40,12 @@
   text-transform: uppercase;
 }
 
-.headings h1 {
-  font-size: 30px;
+.headings h1,
+.headings h2 {
   margin: 0;
 }
 
 .headings h2 {
-  margin: 0;
-  font-size: 20px;
   font-weight: normal;
 }
 
@@ -57,23 +55,26 @@
 
 .jacket-copy .text {
   background-color: white;
-  margin-right: 90px;
-  font-size: 17px;
 }
 
 .info-section .info {
-  font-size: 13px;
   font-weight: lighter;
+  font-size: 10px;
 }
 
 .add-to-cart {
-  background-color: #343f43;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Raleway";
+  padding: 10px 16px;
   text-align: center;
+  background-color: #343f43;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: none;
 }
 
 .add-to-cart:hover {
@@ -88,7 +89,7 @@
   color: #ffbd00;
   border-radius: 400px;
   transition: ease 0.4s;
-  animation: shake 0.5s;
+  animation: shake 0.4s;
 }
 
 @keyframes shake {
@@ -96,7 +97,7 @@
     transform: translate(1px, 1px) rotate(0deg);
   }
   20% {
-    transform: translate(-1px, 0px) rotate(1deg);
+    transform: translate(-5px, 0px) rotate(1deg);
   }
   40% {
     transform: translate(1px, -1px) rotate(1deg);
@@ -109,5 +110,69 @@
   }
   100% {
     transform: translate(1px, -1px) rotate(-1deg);
+  }
+}
+
+@media (min-width: 1050px) {
+  .text {
+    margin-right: 90px;
+  }
+}
+
+@media (min-width: 950px) {
+  .text {
+    font-size: 17px;
+  }
+  .headings h1 {
+    font-size: 30px;
+  }
+
+  .headings h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 850px) {
+  .text {
+    font-size: 14px;
+  }
+  .headings h1 {
+    font-size: 25px;
+  }
+
+  .headings h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  .content {
+    display: block;
+  }
+
+  .copy .breadcrumbs,
+  .copy .headings,
+  .size-button,
+  .add-to-cart {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .text {
+    font-size: 12px;
+  }
+  .headings h1 {
+    font-size: 20px;
+  }
+
+  .headings h2 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 100px) {
+  .text {
+    font-size: 12px;
   }
 }

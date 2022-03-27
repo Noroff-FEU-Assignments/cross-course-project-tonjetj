@@ -20,7 +20,7 @@ input {
   font-size: 18px;
 }
 
-button {
+.submit {
   background: rgb(0, 0, 0);
   border: none;
   width: 200px;
@@ -66,6 +66,6 @@ label {
   color: green;
 }
 
-button:disabled {
+.submity:disabled {
   background: lightgray;
 }
