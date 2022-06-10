@@ -10,7 +10,12 @@ This cross course project's purpose was to create a responsive and neat website 
 
 # Description
 
-The website had to be 
+- HTML should be semantic
+- CSS should follow DRY principle and be easy to read
+- Website should be responsive, look great at all media queries and have no horizontal srollbars.
+- WCAG compliant and take accountability for accessibility
+- Unique meta description, title, and h1
+
 
 # Built With
 
